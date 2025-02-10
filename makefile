@@ -4,7 +4,7 @@ PYTHON = python3.12
 PYTHON_PATH = /usr/include/$(PYTHON)
 PYTHON_LIB = /usr/lib/$(PYTHON)/x86_64-linux-gnu
 
-export LD_LIBRARY_PATH=$(PWD)
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(PWD)
 
 all: check-deps _molecule.so libmol.so
 
